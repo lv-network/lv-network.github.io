@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quêtes | Luka Valencelle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700;900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fog-layer"></div>
+    <div class="particles" id="particles"></div>
+    <div class="vignette"></div>
+
+    <nav>
+        <a href="index.html" class="logo">
+            <span class="logo-icon">⚔</span>
+            <span class="logo-name">Valencelle</span>
+            <span class="logo-sep">—</span>
+            <span class="logo-title">Chroniques</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="experience.html">Parcours</a></li>
+            <li><a href="competences.html">Aptitudes</a></li>
+            <li><a href="projets.html" class="active">Quêtes</a></li>
+            <li><a href="contact.html">Missive</a></li>
+        </ul>
+    </nav>
+
+    <section style="padding-top: 12rem;">
+        <div class="section-header">
+            <h2>QUÊTES</h2>
+            <p>Exploits accomplis au nom du royaume...</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" onclick="toggleProject(1)">
+                <div class="project-image">I</div>
+                <div class="project-content">
+                    <h3 class="project-title">Refonte Réseau Hôtel <span class="project-toggle" id="toggle1">▼</span></h3>
+                    <p class="project-description">
+                        Migration complète de l'infrastructure réseau d'un hôtel : remplacement des switches et routeurs, reconfiguration des serveurs sur le nouveau réseau et mise en production.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Réseau</span>
+                        <span class="project-tag">Système</span>
+                    </div>
+                </div>
+                <div class="project-details" id="details1">
+                    <div class="project-details-content">
+                        <h4>🔧 Préparation</h4>
+                        <p>Configuration des équipements (switches et routeur) en LAB avant déploiement sur site.</p>
+                        
+                        <h4>🏨 Déploiement sur site</h4>
+                        <p>Installation du nouveau matériel à l'hôtel et migration du réseau de production vers une infrastructure plus sécurisée avec des règles de filtrage optimisées.</p>
+                        
+                        <h4>📡 Segmentation réseau</h4>
+                        <ul>
+                            <li>VLAN Téléphonie</li>
+                            <li>VLAN Caméras</li>
+                            <li>VLAN Management (bornes Wi-Fi & switches)</li>
+                        </ul>
+                        
+                        <h4>🖥️ Configuration Serveur</h4>
+                        <p>Déploiement d'un serveur SNMP Auvik sur Ubuntu Server pour la supervision des réseaux Management et Caméras.</p>
+                        
+                        <h4>🛡️ Configuration Routeur</h4>
+                        <ul>
+                            <li>VPN site-to-site</li>
+                            <li>Squid Proxy</li>
+                            <li>Règles NAT/PAT</li>
+                            <li>Règles de filtrage</li>
+                            <li>Services DHCP & DNS</li>
+                        </ul>
+                        
+                        <h4>🔀 Configuration Switches</h4>
+                        <p>Mise en place des différents VLANs avec trunk et access ports configurés selon les besoins de chaque segment.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="toggleProject(2)">
+                <div class="project-image">II</div>
+                <div class="project-content">
+                    <h3 class="project-title">Déploiement Wi-Fi Hôtel <span class="project-toggle" id="toggle2">▼</span></h3>
+                    <p class="project-description">
+                        Installation complète de bornes Wi-Fi avec configuration de multiples SSID sécurisés pour différents usages : staff, clients et services internes.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Réseau</span>
+                        <span class="project-tag">Sécurité</span>
+                    </div>
+                </div>
+                <div class="project-details" id="details2">
+                    <div class="project-details-content">
+                        <h4>📋 Plan d'implémentation</h4>
+                        <p>Réalisation d'un plan d'implémentation complet pour le positionnement optimal des bornes et la couverture Wi-Fi de l'établissement.</p>
+                        
+                        <h4>📡 Configuration des SSID</h4>
+                        <ul>
+                            <li>SSID Staff : réseau sécurisé pour le personnel de l'hôtel</li>
+                            <li>SSID Clients : accès Internet pour les clients de l'hôtel</li>
+                            <li>SSID masqué Téléphonie : réseau dédié aux téléphones internes</li>
+                            <li>SSID masqué TV/Chromecast : réseau dédié aux équipements multimédia</li>
+                        </ul>
+                        
+                        <h4>🌐 Réseau</h4>
+                        <ul>
+                            <li>Règles de filtrage permettant au Wi-Fi client de communiquer avec le réseau multimédia</li>
+                            <li>Autorisation du casting vers les Chromecast depuis les appareils clients</li>
+                        </ul>
+                        
+                        <h4>🔒 Sécurisation</h4>
+                        <ul>
+                            <li>Chiffrement WPA3 pour une sécurité optimale</li>
+                            <li>Portail captif pour l'authentification des clients</li>
+                            <li>SSID masqués pour les services sensibles</li>
+                            <li>Isolation des réseaux entre les différents usages</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="copyright">© 2025 Luka Valencelle — Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

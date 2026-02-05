@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missive | Luka Valencelle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700;900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fog-layer"></div>
+    <div class="particles" id="particles"></div>
+    <div class="vignette"></div>
+
+    <nav>
+        <a href="index.html" class="logo">
+            <span class="logo-icon">⚔</span>
+            <span class="logo-name">Valencelle</span>
+            <span class="logo-sep">—</span>
+            <span class="logo-title">Chroniques</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="experience.html">Parcours</a></li>
+            <li><a href="competences.html">Aptitudes</a></li>
+            <li><a href="projets.html">Quêtes</a></li>
+            <li><a href="contact.html" class="active">Missive</a></li>
+        </ul>
+    </nav>
+
+    <section style="padding-top: 12rem;">
+        <div class="section-header">
+            <h2>MISSIVE</h2>
+            <p>Envoyez votre corbeau messager...</p>
+        </div>
+        <div style="display: block; max-width: 600px; margin: 0 auto;">
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xqelgljr" method="POST">
+                    <div class="form-group">
+                        <label for="name">Votre Nom</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Votre Adresse</label>
+                        <input type="email" id="email" name="email" placeholder="votre@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Votre Message</label>
+                        <textarea id="message" name="message" placeholder="Rédigez votre missive..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer la missive</button>
+                </form>
+                <div style="text-align: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(212, 175, 55, 0.3);">
+                    <a href="https://linkedin.com/in/luka-valencelle" target="_blank" style="color: var(--gold); text-decoration: none; font-size: 1rem; font-family: 'Crimson Text', serif; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;">
+                        <span style="font-size: 1.5rem;">💼</span> linkedin.com/in/luka-valencelle
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="copyright">© 2025 Luka Valencelle — Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
