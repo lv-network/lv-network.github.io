@@ -37,6 +37,39 @@ function toggleProject(projectId) {
     }
 }
 
+// ========== PDF VIEWER ==========
+function openViewer(pdfPath, title) {
+    const modal = document.getElementById('pdf-viewer-modal');
+    const backdrop = document.getElementById('pdf-viewer-backdrop');
+    const frame = document.getElementById('pdf-viewer-frame');
+    const titleEl = document.getElementById('pdf-viewer-title');
+    if (!modal || !frame) return;
+
+    titleEl.textContent = title || 'Document';
+    // Use Google Docs viewer to embed PDF without download button
+    frame.src = 'https://docs.google.com/gview?url=' + encodeURIComponent(window.location.origin + '/' + pdfPath) + '&embedded=true';
+    modal.classList.add('active');
+    backdrop.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeViewer() {
+    const modal = document.getElementById('pdf-viewer-modal');
+    const backdrop = document.getElementById('pdf-viewer-backdrop');
+    const frame = document.getElementById('pdf-viewer-frame');
+    if (!modal) return;
+
+    modal.classList.remove('active');
+    backdrop.classList.remove('active');
+    frame.src = '';
+    document.body.style.overflow = '';
+}
+
+// Close viewer with Escape key
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeViewer();
+});
+
 // ========== PAGE TRANSITIONS ==========
 
 const pageMessages = {

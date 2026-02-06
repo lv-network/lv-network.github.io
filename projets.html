@@ -122,11 +122,112 @@
                     </div>
                 </div>
             </div>
+            <div class="project-card" onclick="toggleProject(3)">
+                <div class="project-image">III</div>
+                <div class="project-content">
+                    <h3 class="project-title">Homelab Personnel <span class="project-toggle" id="toggle3">▼</span></h3>
+                    <p class="project-description">
+                        Mise en place d'un laboratoire réseau personnel pour expérimenter, se former et simuler des environnements d'entreprise à domicile.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Réseau</span>
+                        <span class="project-tag">Système</span>
+                        <span class="project-tag">Virtualisation</span>
+                    </div>
+                </div>
+                <div class="project-details" id="details3">
+                    <div class="project-details-content">
+                        <h4>🖥️ Infrastructure</h4>
+                        <ul>
+                            <li>Serveur Proxmox pour la virtualisation de machines</li>
+                            <li>Switches managéables pour la segmentation VLAN</li>
+                            <li>Routeur/Firewall pfSense dédié</li>
+                        </ul>
+
+                        <h4>🔧 Services déployés</h4>
+                        <ul>
+                            <li>Active Directory (Windows Server 2022)</li>
+                            <li>Serveur DNS / DHCP</li>
+                            <li>Serveur de certificats (ADCS)</li>
+                            <li>VPN sur OPNsense avec authentification LDAP liée à l'Active Directory</li>
+                        </ul>
+
+                        <h4>🎯 Objectifs</h4>
+                        <p>Reproduire des architectures d'entreprise, tester des scénarios de sécurité et approfondir mes compétences en administration système et réseau dans un environnement maîtrisé.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="toggleProject(4)">
+                <div class="project-image">IV</div>
+                <div class="project-content">
+                    <h3 class="project-title">CTF — Capture The Flag <span class="project-toggle" id="toggle4">▼</span></h3>
+                    <p class="project-description">
+                        Participation à un challenge CTF organisé dans le cadre scolaire, mettant à l'épreuve les compétences en cybersécurité offensive et défensive.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Cybersécurité</span>
+                        <span class="project-tag">Pentest</span>
+                    </div>
+                </div>
+                <div class="project-details" id="details4">
+                    <div class="project-details-content">
+                        <h4>🏴 Épreuves</h4>
+                        <ul>
+                            <li>Reconnaissance et énumération de services</li>
+                            <li>Exploitation de vulnérabilités web (injection SQL, XSS)</li>
+                            <li>Escalade de privilèges sur machines Linux et Windows</li>
+                            <li>Analyse de trames réseau (Wireshark)</li>
+                        </ul>
+
+                        <h4>🛠️ Outils utilisés</h4>
+                        <ul>
+                            <li>Kali Linux, Nmap, Burp Suite</li>
+                            <li>Metasploit, John the Ripper</li>
+                            <li>Wireshark, Gobuster</li>
+                        </ul>
+
+                        <h4>🏆 Résultat</h4>
+                        <p>Expérience formatrice ayant renforcé la méthodologie d'analyse et la capacité à travailler sous pression en équipe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section style="padding-top: 4rem;">
+        <div class="section-header">
+            <h2>CERTIFICATIONS</h2>
+            <p>Sceaux de maîtrise obtenus...</p>
+        </div>
+        <div class="certifications-grid">
+            <div class="cert-card">
+                <div class="cert-icon">🛡️</div>
+                <div class="cert-info">
+                    <h3 class="cert-name">MOOC SecNumAcadémie — ANSSI</h3>
+                    <p class="cert-detail">Formation en cybersécurité par l'Agence nationale de la sécurité des systèmes d'information</p>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">📋</div>
+                <div class="cert-info">
+                    <h3 class="cert-name">MOOC RGPD — CNIL</h3>
+                    <p class="cert-detail">Formation sur le Règlement Général sur la Protection des Données</p>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">🐍</div>
+                <div class="cert-info">
+                    <h3 class="cert-name">freeCodeCamp — Python</h3>
+                    <p class="cert-detail">Certification en préparation — Scientific Computing with Python</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p class="copyright">© 2025 Luka Valencelle — Tous droits réservés</p>
+        <p class="copyright">© 2026 Luka Valencelle — Tous droits réservés</p>
     </footer>
 
     <script src="script.js"></script>

@@ -77,9 +77,91 @@
         </div>
     </section>
 
+    <!-- FORMATION -->
+    <section style="padding-top: 4rem;">
+        <div class="section-header">
+            <h2>FORMATION</h2>
+            <p>Les savoirs enseignés par les maîtres...</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2025 — 2026</div>
+                <h3 class="timeline-title">Licence Pro ASSR</h3>
+                <p class="timeline-company">Université Paris Est Créteil</p>
+                <div class="timeline-description">
+                    <p style="margin-bottom: 1rem; color: var(--text-secondary);">Administration et Sécurité des Systèmes et Réseaux — en vue d'un Master Cybersécurité en septembre 2026.</p>
+
+                    <div class="library-section">
+                        <h4 class="library-title">📚 Bibliothèque des travaux</h4>
+                        <div class="library-grid">
+                            <div class="library-item" onclick="openViewer('tp/Base_de_linux_VALENCELLE_Luka.pdf', 'TP Base de Linux')">
+                                <span class="library-icon">📄</span>
+                                <span class="library-name">Base de Linux</span>
+                            </div>
+                            <div class="library-item" onclick="openViewer('tp/TP_SSH_VALENCELLE_Luka.pdf', 'TP SSH')">
+                                <span class="library-icon">📄</span>
+                                <span class="library-name">SSH</span>
+                            </div>
+                            <div class="library-item" onclick="openViewer('tp/TP_LAMP_VALENCELLE_LUKA.pdf', 'TP LAMP')">
+                                <span class="library-icon">📄</span>
+                                <span class="library-name">LAMP</span>
+                            </div>
+                            <div class="library-item" onclick="openViewer('tp/TP_VPN.pdf', 'TP VPN')">
+                                <span class="library-icon">📄</span>
+                                <span class="library-name">VPN</span>
+                            </div>
+                            <div class="library-item" onclick="openViewer('tp/TP_Proxy_ASSR_VALENCELLE_LUKA.pdf', 'TP Proxy')">
+                                <span class="library-icon">📄</span>
+                                <span class="library-name">Proxy</span>
+                            </div>
+                            <div class="library-item" onclick="openViewer('tp/TP - Cryptologie — Luka Valencelle - Allan Ettinger.pdf', 'TP Cryptologie')">
+                                <span class="library-icon">📄</span>
+                                <span class="library-name">Cryptologie</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="library-section" style="margin-top: 1.5rem;">
+                        <h4 class="library-title">📝 Rapports d'activité</h4>
+                        <div class="library-grid">
+                            <div class="library-item" onclick="openViewer('tp/RappAct_SSO_DCOTTENCEAU_LVALENCELLE.pdf', 'Rapport d\'activité — SSO')">
+                                <span class="library-icon">📑</span>
+                                <span class="library-name">Rapport d'activité — SSO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2022 — 2024</div>
+                <h3 class="timeline-title">BTS SIO option SISR</h3>
+                <p class="timeline-company">En alternance chez UT Hospitality</p>
+                <div class="timeline-description">
+                    <ul>
+                        <li>Mise en place d'une infrastructure système et réseau complète (Windows Server, Active Directory, DNS, DHCP)</li>
+                        <li>Déploiement d'un pare-feu OPNsense avec VPN certifié par utilisateur et règles de filtrage</li>
+                        <li>Création de scripts PowerShell pour automatiser la création d'utilisateurs via import CSV</li>
+                        <li>Configuration de services réseau (VLAN, routage, supervision)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p class="copyright">© 2025 Luka Valencelle — Tous droits réservés</p>
+        <p class="copyright">© 2026 Luka Valencelle — Tous droits réservés</p>
     </footer>
+
+    <!-- PDF Viewer Modal -->
+    <div id="pdf-viewer-modal" class="pdf-modal">
+        <div class="pdf-modal-header">
+            <span id="pdf-viewer-title" class="pdf-modal-title"></span>
+            <button onclick="closeViewer()" class="pdf-modal-close">✕</button>
+        </div>
+        <iframe id="pdf-viewer-frame" class="pdf-modal-frame"></iframe>
+    </div>
+    <div id="pdf-viewer-backdrop" class="pdf-modal-backdrop" onclick="closeViewer()"></div>
 
     <script src="script.js"></script>
 </body>
