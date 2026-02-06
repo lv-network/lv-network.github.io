@@ -46,8 +46,7 @@ function openViewer(pdfPath, title) {
     if (!modal || !frame) return;
 
     titleEl.textContent = title || 'Document';
-    // Use Google Docs viewer to embed PDF without download button
-    frame.src = 'https://docs.google.com/gview?url=' + encodeURIComponent(window.location.origin + '/' + pdfPath) + '&embedded=true';
+    frame.src = pdfPath + '#toolbar=0&navpanes=0';
     modal.classList.add('active');
     backdrop.classList.add('active');
     document.body.style.overflow = 'hidden';
